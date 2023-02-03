@@ -14,6 +14,12 @@
         font-size: 30px;
 
 }
+.navbar-toggler{
+    box-shadow: none !important;
+}
+.navbar-toggler i{
+    font-size: 35px;
+}
 .navbar-light .navbar-brand.navhead:hover{
     color: #ffffff;
 
@@ -21,20 +27,19 @@
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: #ffffff !important;
     margin-right: 12px;
+    border-bottom: 2.1px solid transparent;
+   
 }
-.navbar-light .navbar-nav .nav-item .nav-link.active{
+/* .navbar-light .navbar-nav .nav-item .nav-link.active{
     color: #4f81ec !important;
-}
+} */
 .navbar-collapse.navlist{
     padding-left: 225px;
 }
-.navbar-light .navbar-nav .nav-item .nav-link:hover{
+.navbar-light .navbar-nav .nav-item .nav-link:hover, .navbar-light .navbar-nav .nav-item .nav-link.active {
     color: #ffffff;
-    /* text-decoration: underline; */
-    padding-bottom: 7px;
-    border-bottom-style: solid;
-    border-bottom-width: 2.1px;
-    width: fit-content;
+    border-bottom-color: #ffffff ;
+     width: fit-content;
 }
 .btn-outline-primary.layoutbutton, .btn-primary.layoutbutton{
     border-radius: 20px;
@@ -156,6 +161,9 @@
     /* width: 60px; */
     filter: grayscale(1);
 
+}
+.logolist img:hover{
+    filter: grayscale(0);
 }
 /* media querie for logo starts  */
 @media 
@@ -682,7 +690,7 @@
     left: 0;
     top: 4px;
     content: "";
-    background-image: url(/images/icons8-done-30.png);
+    background-image: url(images/icons8-done-30.png);
     height: 20px;
     width: 20px;
     background-size: 20px;
@@ -693,7 +701,7 @@
 }
 .plan-list li.uncheck::before{
    
-    background-image: url(/images/icons8-multiply-30\ \(1\).png);
+    background-image: url(images/icons8-multiply-30\ \(1\).png);
     font-weight: 500;
 
 }
@@ -944,7 +952,7 @@
     left: 0px;
     top: 2px;
     content: "";
-    background-image: url(/images/icons8-more-than-30.png);
+    background-image: url(images/icons8-more-than-30.png);
     height: 20px;
     width: 20px;
     background-size: 17px;
@@ -964,6 +972,9 @@
     }
     h3{
         font-size: 20px !important;
+    }
+    .callaction h1{
+        font-size: 20px;
     }
     
 }
