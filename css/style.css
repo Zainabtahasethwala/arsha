@@ -401,7 +401,7 @@
 
 /* call to action */
 .callaction{
-    background-image: url(/images/building.jpg);
+    background-image: url(images/building.jpg);
     /* filter: brightness(50%); */
     position: relative;
     padding-top: 48px;
