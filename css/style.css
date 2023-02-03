@@ -47,10 +47,11 @@
     padding: 7px 22px;
     border-color:#31a9e1;
 }
-.btn-outline-primary.layoutbutton:hover, .btn-primary.layoutbutton:hover{
+.btn-outline-primary.layoutbutton:hover{
     background-color:#31a9e1;
     border-color:#31a9e1;
     box-shadow: none;
+    border: 1px solid  #31a9e1;
 
 }
 .navbar-light .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
@@ -96,16 +97,20 @@
     font-size: 18px;
     vertical-align: super;
 }
-
-.fontbtn button:hover{
-    background-color: none;
-    border: none;
-    color: #ffffff;
+.bannerfont .btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid #31a9e1;
+    color: #31a9e1;
 }
+
 .btn-primary.layoutbutton{
     background-color:#31a9e1;
     font-size: 18px;
 }
+.fontbtn i:hover{
+    color: #31a9e1;
+}
+
 /* media querie for navbar */
 @media 
 (max-width:991px) {
@@ -448,7 +453,7 @@
 }
 .call-btn button:hover{
     background-color: #31a9e1;
-    border: #31a9e1;
+    border: 1px solid #31a9e1;
     color: #ffffff;
 }
 @media (max-width:991px) {
@@ -505,6 +510,9 @@
     padding: 3px 17px;
     text-decoration: none !important;
     color: #000;
+}
+.portfolio-a a:hover{
+    color: #31a9e1;
 }
 .portfolio-a .active{
     border: 1px solid #31a9e1;
@@ -614,7 +622,7 @@
     background-color: #000;
     color: #ffffff;
 }
-.team-icon i:hover{
+.team-icon a:hover i{
     color: #ffffff;
 }
 @media (max-width:480px) {
@@ -716,6 +724,9 @@
     background-color: #31a9e1;
     color: #ffffff;
  
+}
+.noborder.businessplan{
+    border-top: 0;
 }
 .btn.b-plan{
     background-color: #31a9e1;
@@ -873,7 +884,7 @@
     padding: 7px 22px;
     background-color: #31a9e1;
     color: #ffffff;
-    border: #31a9e1;
+    border: 1px solid #31a9e1;
    display: flex;
      justify-content: center;
      align-items: center;
