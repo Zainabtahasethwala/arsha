@@ -58,20 +58,30 @@
     vertical-align: middle;
 }
 .navbar .nav-item .dropdown-menu
-{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+{ 
+    display: none;
+ }
+	
+	.navbar .nav-item:hover .dropdown-menu
+    {
+         display: block; 
+        }
+.navbar-nav a{
+    font-size: 18px;
+}
 
 	/* .navbar .nav-item .dropdown-menu{ margin-top:0; } */
     .navbtn button{
         line-height: 1.2;
     }
-
+.navbar-toggler i{
+    color: #ffffff;
+}
     /* nav bar css ends */
 
     /* banner css starts */
 .bannertext{
-    padding: 65px 0;
+    padding: 50px 0;
 
 }
 .bannertext h1{
@@ -82,6 +92,7 @@
 .bannertext p{
     font-size: 24px;
     color:rgba(255,255,255, 0.7);
+    margin-bottom: 0;
 }
 .bannerimage img{
     /* height: 500px;  */
@@ -89,10 +100,14 @@
 }
 .fontbtn i{
     font-size: 30px;
+    margin-right: 7px;
+}
+.fontbtn{
+    vertical-align: middle;
 }
 .fontbtn button{
     border: none;
-    color: #ffffff;
+    color: #ffffff !important;
     padding-left: 3px;
     font-size: 18px;
     vertical-align: super;
@@ -107,7 +122,7 @@
     background-color:#31a9e1;
     font-size: 18px;
 }
-.fontbtn i:hover{
+.fontbtn:hover i{
     color: #31a9e1;
 }
 
@@ -126,13 +141,26 @@
         display: flex;
         justify-content: center;
     }
-}
-/* media querie for banner */
-@media (max-width:767px) {
-    .bannertext{
-        padding: 20px 0;
+    .navbar-nav a{
+        font-size: 18px;
 
     }
+    .navbar-light .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+    }
+}
+/* media querie for banner */
+@media (max-width:991px) {
+    .bannertext{
+        padding: 12px 0 20px 0;
+     }
+     .bannertext h1{
+        font-size: 25px;
+     }
+     .bannertext p{
+        margin-bottom: 0;
+        font-size: 18px;
+     }
     
 }
 @media (max-width:333px) {
@@ -148,6 +176,7 @@
     }
     
 }
+
 /* media querie ends */
 
 /* logo-list css */
@@ -262,12 +291,19 @@
     background-color: #f3f5fa;
     padding-bottom: 32px;
 }
+.accordion-item{
+    border-radius: 8px !important;
+    border: 1px solid transparent !important;
+}
 .workstation h3{
     color: #37517e;
 }
 .accordion-header span{
     font-size: 16px;
     color:#31a9e1;
+}
+.accordion-button{
+    font-weight: 500;
 }
 .accordion-header button:hover{
     color:#31a9e1;
@@ -392,6 +428,10 @@
     color: #444444;
     font-size: 19px;
     text-align: center;
+}
+.service-tag{
+    box-shadow: 5px 5px 7px #d6d7da;
+    /* border: 1px solid transparent; */
 }
 .card-body i{
     font-size: 34px;
@@ -559,6 +599,9 @@
     width: 34px;
     border-radius: 2px;
 }
+.team-1{
+    box-shadow: 3px 5px 7px #d5d6da;
+}
 .teamp {
     text-align: center;
     font-size: 17px;
@@ -668,9 +711,7 @@
     text-align: center;
     font-size: 17px;
 }
-.free-plan{
-    box-shadow: 3px 5px 7px #f3f5fa;
-}
+
 .free-plan h5{
     color: #37517e;
 }
@@ -688,6 +729,10 @@
 .free-plan li{
     list-style-type: none;
     
+}
+.free-plan{
+    box-shadow: 3px 3px 5px  7px #f3f5fa;
+    border: 1px solid transparent;
 }
 .plan-list li{
     position: relative;
@@ -733,8 +778,10 @@
     color: #ffffff;
 }
 .businessplan{
-    border-top: 4px solid #31a9e1;
-    border-radius: 5px;
+     border-radius: 5px;
+}
+.pricing-tag2{
+    border-top: 4px solid #31a9e1 !important;
 }
 @media (max-width:991px) {
     .businessplan{
@@ -858,26 +905,30 @@
     width: 100%;
 }
 .contact-loaction{
-    border: 1px solid #f3f5fa;
+    border: 1px solid transparent;
     border-top: 4px solid #31a9e1;
     border-bottom: 4px solid #31a9e1;
     border-radius: 3px;
+    box-shadow: 3px 5px 7px #f3f5fa;
+        
+    
 }
 @media (max-width:991px) {
     .contact-loaction{
-        margin-bottom: 20px;
+        margin-bottom: 45px;
     }
     
 }
 /* form css */
 .contact-form{
-    border: 1px solid #f3f5fa;
+    border: 1px solid transparent;
     border-top: 4px solid #31a9e1;
     border-bottom: 4px solid #31a9e1;
     border-radius: 3px;
+    box-shadow: 3px 5px 7px #f3f5fa;
 }
 .contact .contact-form{
-    padding-bottom: 37px !important;
+    padding-bottom: 10px !important;
 
 }
 .contact-form button{
@@ -896,6 +947,9 @@
     border:1px solid #31a9e1;
     color: #31a9e1;
     background-color: #ffffff;
+}
+.form-checkbox label{
+    vertical-align: middle;
 }
 @media (max-width:991px) {
     .contact{
