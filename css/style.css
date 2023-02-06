@@ -148,6 +148,26 @@
     .navbar-light .navbar-nav .nav-item .nav-link {
         margin-right: 0;
     }
+    .navbar-collapse{
+        background-color: #f3f5fa;
+        margin: 7px 0;
+        border-radius: 10px;
+        color: #000 !important;
+    }
+    /* .navbar-light .navbar-nav .nav-item .nav-link{
+        margin: 7px 0;
+        color: #000 ;
+    } */
+    
+    .navbar-light .navbar-nav .nav-item .nav-link.active {
+        color: #37517e !important;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #000 !important;
+}
+.btn-outline-primary.layoutbutton{
+    color: #31a9e1;
+}
 }
 /* media querie for banner */
 @media (max-width:991px) {
@@ -318,7 +338,7 @@
     position: relative;
 }
 .accordion-button:not(.collapsed){
-    box-shadow: none !important;
+    box-shadow:  none !important;
     background-color: #ffffff !important;
     color: #31a9e1 !important;
 
@@ -339,8 +359,11 @@
     bottom: auto;
     line-height: 50px;
 }
+.accordion-button::after{
+    background-size: 13px !important;
+}
  .accordion-item{
-    box-shadow: none !important;
+    box-shadow:none !important;
 }
 @media (max-width:991px) {
    
@@ -430,7 +453,7 @@
     text-align: center;
 }
 .service-tag{
-    box-shadow: 5px 5px 7px #d6d7da;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
     /* border: 1px solid transparent; */
 }
 .card-body i{
@@ -458,6 +481,7 @@
     /* filter: brightness(50%); */
     position: relative;
     padding-top: 48px;
+    background-attachment: fixed;
    
     
 }
@@ -600,7 +624,7 @@
     border-radius: 2px;
 }
 .team-1{
-    box-shadow: 3px 5px 7px #d5d6da;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
 }
 .teamp {
     text-align: center;
@@ -731,7 +755,7 @@
     
 }
 .free-plan{
-    box-shadow: 3px 3px 5px  7px #f3f5fa;
+    box-shadow: rgba(155, 154, 154, 0.815) 0px 3px 8px;
     border: 1px solid transparent;
 }
 .plan-list li{
@@ -909,7 +933,7 @@
     border-top: 4px solid #31a9e1;
     border-bottom: 4px solid #31a9e1;
     border-radius: 3px;
-    box-shadow: 3px 5px 7px #f3f5fa;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
         
     
 }
@@ -925,7 +949,7 @@
     border-top: 4px solid #31a9e1;
     border-bottom: 4px solid #31a9e1;
     border-radius: 3px;
-    box-shadow: 3px 5px 7px #f3f5fa;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
 }
 .contact .contact-form{
     padding-bottom: 10px !important;
@@ -1010,12 +1034,12 @@
 }
 .link-tag li{
     position: relative;
-    padding-left: 20px;
+    padding: 10px 0 10px 20px;
 }
 .link-tag li::before{
     position: absolute;
     left: 0px;
-    top: 2px;
+    top: 12px;
     content: "";
     background-image: url(../images/icons8-more-than-30.png);
     height: 20px;
