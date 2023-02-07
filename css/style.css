@@ -14,6 +14,9 @@
         font-size: 30px;
 
 }
+.navbar{
+    padding-top: 16px;
+}
 .navbar-toggler{
     box-shadow: none !important;
 }
@@ -145,6 +148,9 @@
         font-size: 18px;
 
     }
+    .navbar{
+        padding-top: 0!important;
+    }
     .navbar-light .navbar-nav .nav-item .nav-link {
         margin-right: 0;
     }
@@ -153,6 +159,7 @@
         margin: 7px 0;
         border-radius: 10px;
         color: #000 !important;
+        padding: 18px 0;
     }
     /* .navbar-light .navbar-nav .nav-item .nav-link{
         margin: 7px 0;
